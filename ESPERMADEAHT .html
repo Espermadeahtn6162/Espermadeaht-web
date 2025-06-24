@@ -1,0 +1,215 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>☠️ ESPERMADEAHT II ☠️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>☠️ ESPERMADEAHT II ☠️</h1>
+    <p class="subtitle blink">El servidor que nadie esperaba… y que todos temerán.</p>
+    <p class="description">
+      Tras el caos y la gloria de su primera era, 
+      <span class="glitch highlight" data-text="Espermadeaht II">Espermadeaht II</span> regresa para borrar toda huella de supervivencia fácil.
+      Prepárate para enfrentarte a <strong>mobs customizados</strong>, <strong>biomas oscuros</strong> y <strong>estructuras mortales</strong>.
+      Solo los más fuertes sobrevivirán… o perecerán intentando.
+    </p>
+    <p class="date">📅 Lanzamiento oficial: 30 de noviembre de 2025</p>
+    <a href="https://discord.gg/Ae8KuU3t" class="btn" target="_blank" rel="noopener noreferrer">ÚNETE AL SERVIDOR</a>
+
+    <section class="trailer">
+      <h2>🎥 Tráiler Oficial</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/NyKWbpHD_i4" 
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Espermadeaht Community. Todos los derechos reservados.
+  </footer>
+</body>
+</html><style>body {
+  margin: 0;
+  padding: 0;
+  background: #000 url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
+  color: #ddd;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  padding: 60px 20px;
+  flex: 1;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5em;
+  color: #f00;
+  text-shadow: 3px 3px #000;
+  transform: skew(-8deg);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.2em;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #0f0;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+
+.glitch {
+  position: relative;
+  color: #0f0;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #f00;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+  animation: glitchTop 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  color: #0ff;
+  animation: glitchBottom 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 50px, 0); transform: translate(-2px, -2px); }
+  20% { clip: rect(85px, 9999px, 140px, 0); transform: translate(2px, 2px); }
+  30% { clip: rect(10px, 9999px, 50px, 0); transform: translate(-2px, 0); }
+  40% { clip: rect(40px, 9999px, 80px, 0); transform: translate(2px, -2px); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(60px, 9999px, 100px, 0); transform: translate(2px, 2px); }
+  20% { clip: rect(10px, 9999px, 50px, 0); transform: translate(-2px, -2px); }
+  30% { clip: rect(85px, 9999px, 140px, 0); transform: translate(2px, 0); }
+  40% { clip: rect(40px, 9999px, 80px, 0); transform: translate(-2px, 2px); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+.date {
+  font-size: 1.3em;
+  color: #f00;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #8b0000, #ff0000);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+}
+
+.trailer {
+  margin-top: 60px;
+}
+
+.trailer h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #555;
+  background: #000;
+}
+
+/* 🎯 RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 12px 30px;
+  }
+
+  .trailer h2 {
+    font-size: 1.5em;
+  }
+}</style>
